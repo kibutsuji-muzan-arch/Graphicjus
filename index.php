@@ -15,15 +15,16 @@
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
+
 <body>
 
-  <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
     <a class="device-notification--logo" href="#0">
       <img src="assets/img/logo.png" alt="graphicjus">
       <p>Graphicjus</p>
     </a>
-    <p class="device-notification--message">Graphicjus hasS so much to offer that we must request you orient your device to
+    <p class="device-notification--message">Graphicjus hasS so much to offer that we must request you orient your device
+      to
       portrait or find a larger screen. You won't be disappointed.</p>
   </div>
 
@@ -35,7 +36,7 @@
           <header class="header">
             <a class="header--logo" href="#0">
               <img src="assets/img/logo2.png" alt="Graphicjus">
-              
+
             </a>
             <button class="header--cta cta">Hire Us</button>
             <div class="header--nav-toggle">
@@ -55,7 +56,7 @@
             <li class="l-section section section--is-active">
               <div class="intro">
                 <div class="intro--banner">
-                  <h1>Hello,<br>I'm Kashif A<br>Graphic & Web-Developer<br> In your City</h1>
+                  <h1>Hello,<br>I'm Kashif A<br>Graphic Designer <br>& Web-Developer</h1>
                   <button class="cta">Hire Us
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
@@ -76,7 +77,8 @@
                   </a>
                   <a href="#0">
                     <h3>What We Do</h3>
-                    <p>We help businesses and companies reach their goals by designing user-centric digital products & interactive experiences</p>
+                    <p>We help businesses and companies reach their goals by designing user-centric digital products &
+                      interactive experiences</p>
                   </a>
                   <a href="#0">
                     <h3>When I Started</h3>
@@ -105,7 +107,8 @@
                           <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
                         </div>
                         <p class="slider--item-title">Secondary graffiti style art</p>
-                        <p class="slider--item-description"> Discover how to encourage technical, artistic growth through the art form as well as study the fundamentals of art.</p>
+                        <p class="slider--item-description"> Discover how to encourage technical, artistic growth
+                          through the art form as well as study the fundamentals of art.</p>
                       </a>
                     </li>
                     <li class="slider--item slider--item-right">
@@ -114,7 +117,8 @@
                           <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
                         </div>
                         <p class="slider--item-title">MOTION BLUR</p>
-                        <p class="slider--item-description">Motion blur is the apparent streaking of moving objects in a photograph or a sequence of frames.</p>
+                        <p class="slider--item-description">Motion blur is the apparent streaking of moving objects in a
+                          photograph or a sequence of frames.</p>
                       </a>
                     </li>
                   </ul>
@@ -201,11 +205,12 @@
               <div class="hire">
                 <h2>You want us to do</h2>
                 <!-- checkout formspree.io for easy form setup -->
-                <form class="work-request">
+                <form id="form" class="work-request" method="POST"
+                  action="http://localhost<?php echo $_SERVER['PHP_SELF'] ?>">
                   <div class="work-request--options">
                     <span class="options-a">
-                      <input id="opt-1" type="checkbox" value="app design">
-                      <label for="opt-1">
+                      <input id="opt-1" type="checkbox" value="app-design">
+                      <label for="opt-1" onclick="select('opt-1')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -216,8 +221,8 @@
                         </svg>
                         App Design
                       </label>
-                      <input id="opt-2" type="checkbox" value="graphic design">
-                      <label for="opt-2">
+                      <input id="opt-2" type="checkbox" value="graphic-design">
+                      <label for="opt-2" onclick="select('opt-2')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -228,8 +233,8 @@
                         </svg>
                         Graphic Design
                       </label>
-                      <input id="opt-3" type="checkbox" value="motion design">
-                      <label for="opt-3">
+                      <input id="opt-3" type="checkbox" value="motion-design">
+                      <label for="opt-3" onclick="select('opt-3')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -242,8 +247,8 @@
                       </label>
                     </span>
                     <span class="options-b">
-                      <input id="opt-4" type="checkbox" value="ux design">
-                      <label for="opt-4">
+                      <input id="opt-4" type="checkbox" value="ux-design">
+                      <label for="opt-4" onclick="select('opt-4')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -255,7 +260,7 @@
                         UX Design
                       </label>
                       <input id="opt-5" type="checkbox" value="webdesign">
-                      <label for="opt-5">
+                      <label for="opt-5" onclick="select('opt-5')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -267,7 +272,7 @@
                         Webdesign
                       </label>
                       <input id="opt-6" type="checkbox" value="marketing">
-                      <label for="opt-6">
+                      <label for="opt-6" onclick="select('opt-6')">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
                           style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -282,15 +287,16 @@
                   </div>
                   <div class="work-request--information">
                     <div class="information-name">
-                      <input id="name" type="text" spellcheck="false">
+                      <input id="name" name="name" type="text" spellcheck="false" required>
                       <label for="name">Name</label>
                     </div>
                     <div class="information-email">
-                      <input id="email" type="email" spellcheck="false">
+                      <input id="email" type="email" name="email" spellcheck="false" required>
                       <label for="email">Email</label>
                     </div>
                   </div>
-                  <input type="submit" value="Send Request">
+                  <input name="services" id="services" style="display:none" type="text" />
+                  <input id="submit" type="submit" value="Send Request">
                 </form>
               </div>
             </li>
@@ -306,14 +312,106 @@
       <li>Hire us</li>
     </ul>
   </div>
+  
+  <?php
+    $servername = "localhost";
+    $database = "graphicjus";
+    $username = "root";
+    $password = "";
 
+    function guidv4($data = null)
+    {
+      // Generate 16 bytes (128 bits) of random data or use the data passed into the function.
+      $data = $data ?? random_bytes(16);
+      assert(strlen($data) == 16);
+
+      // Set version to 0100
+      $data[6] = chr(ord($data[6]) & 0x0f | 0x40);
+      // Set bits 6-7 to 10
+      $data[8] = chr(ord($data[8]) & 0x3f | 0x80);
+
+      // Output the 36 character UUID.
+      return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+    }
+    $ID = guidv4();
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $database);
+
+    // Check connection
+    
+    if ($conn->connect_error) {
+      echo "cant connect";
+      die("Connection failed: " . mysqli_connect_error());
+    }
+    // echo $conn;
+    if ($conn) {
+      // echo "Connected successfully";
+      if ($_SERVER['REQUEST_METHOD']=='POST'){
+      // echo "Connected successfully";
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $services = $_POST['services'];
+        $sql = "INSERT INTO Contacts (UUID,Name,Email,Services) VALUES ('$ID','$name','$email','$services');";
+
+        mysqli_query($conn, $sql);
+      }
+      // $sql = "INSERT INTO Contacts ('UUID','Name','Email','Service') ";
+      // echo var_dump($services);
+    }
+    mysqli_close($conn);
+  ?>
+
+  <script>
+    services = []
+    ser = document.getElementById('services')
+    var select = (val) => {
+      elem = document.getElementById(val)
+      if (elem.checked) {
+        // elem.checked = false
+        let index = services.indexOf(elem.value)
+        if (index > -1) {
+          services.splice(index, 1)
+        }
+      } else {
+        services.push(elem.value)
+        // elem.checked = true
+      }
+      console.log(services)
+    }
+
+
+    document.getElementById('submit').addEventListener('click', (event) => {
+      ser.setAttribute('value', services)
+    })
+      //   // event.preventDefault()
+    //   let formData = new FormData()
+    //   const API_ENDPOINT = "http://localhost:80/Graphicjus/databaseconnect.php";
+    //   const request = new XMLHttpRequest();
+    //   request.open("POST", API_ENDPOINT, true);
+    //   // request.onreadystatechange = () => {
+    //   //   if (request.readyState === 4 && request.status === 200) {
+    //   //     console.log(request.responseText);
+    //   //   }
+    //   // };
+    //   formData.append('name', document.getElementById('name').value)
+    //   formData.append('email', document.getElementById('email').value)
+    //   formData.append('services', services)
+    //   // formData.append('csrfmiddlewaretoken', document.querySelector('[name=csrfmiddlewaretoken]').value)
+    //   request.send(formData);
+    //   for (const [key, value] of formData) {
+    //     console.log(key, value)
+    //   }
+    //   console.log(services)
+    // })
+
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
 
   <script src="jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
-  
+
 </body>
 
 </html>
